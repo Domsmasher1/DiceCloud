@@ -13,4 +13,7 @@ COPY . .
 RUN curl https://install.meteor.com/?release=1.8.0.2 | sh
 ENV PATH="/app/.meteor:$PATH"
 COPY dev.sh ./dev.sh
+
+EXPOSE 8080
+
 ENTRYPOINT ["./dev.sh"]
