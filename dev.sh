@@ -1,11 +1,4 @@
-#!/bin/bash
 set -o errexit -o nounset
-
-# Navigate to the app directory
-cd /app
-
-# Install npm dependencies
+cd DiceCloud/app
 meteor npm install
-
-# Start the Meteor application
-exec meteor
+meteor
