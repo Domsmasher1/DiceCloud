@@ -2,7 +2,7 @@
 set -o errexit -o nounset
 
 # Navigate to the app directory
-cd DiceCloud/app
+cd /app
 
 # Install npm dependencies
 meteor npm install
